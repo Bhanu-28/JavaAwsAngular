@@ -1,0 +1,2037 @@
+9 days --> aws training will be
+Pradheep John R //aws instructor  
+start with the basics
+
+hello
+
+Whatever we seen basics of cloud computing cli
+
+RDS
+
+Assessment 1
+salient bound of services  
+how to work with mcq i cleared a lot 
+there is negative marking u have to be very clear in answer mcq 
+please read the question twice understand the perspective of that question please read question very carefully in 
+certain questions if u have check box multiple answers were required for that question 
+answer when u are confident what if all are same 
+use knowledge sss
+comeback if u a have time 
+same question with different order might come 
+#for aws monday mcq 
+till amazon rds
+	Basics of cloud computing 
+	cli
+	Accounts
+	Iam
+	Organiztions
+	Networking
+	vpc
+	subnet
+	gateway
+	routable
+	Ec2
+	Load balancer and types
+	auto scaling 
+	s3
+	elb
+	Ebs volumes
+
+S3
+
+Laod balanced
+
+Auto scaling
+
+Up and down  when data rising
+
+ first 4 days 
+cloud fundamentals 
+accounts 
+organizations 
+cli 
+iam 
+networking vpc subnet internet gate way route tables ec2
+eps volumes 
+elb elastic load balance gateway load balncer
+s3
+amzon rds 
+
+exam for monday session 
+
+
+
+Saturday Monday dynamodb and programming aspects how to connect with applications on Tuesday assessment 2 connectivity with java applications lamda notification service
+what do u mean by cloud computing 
+
+normal data centre and cloud computer difference 
+api controller 
+the infrastructure that we setup is our own i require various teams to maintain and moniter that infrastrcuture 
+if 100 users were coming and 10 users are coming in it isn not good 
+
+cloud the infrastructure part we dont have to worry about 
+that is taken care by organization which gives 
+we just utilize that resources and pay for that only 
+
+
+to manage the load we use the concept ha high availability 
+
+can acccess bank 24 hrs and maintaince window will be there 
+
+tooo many people access then resource contention might happpen 
+
+
+access live stream video streaming then cloud computing comes to picture where it deliver the data quickly 
+
+
+on premisis //organisation data center
+cloud //capablity of access to data 
+
+
+service models 
+iaas - infrastructure as a servicer
+
+i control that i need to take care of guest os runtime and virtualisation 
+paas - platform as a service
+application and data part i need to take care 
+saas - software as a service 
+everything will be provided by cloud provider 
+
+scaling means as and when resources were required u need to provide or capability of providing that resources 
+may be more demand in resources or less demand in resources 
+scale up(higher ampount) or scale down (lesser amount )
+
+scaling is done automaticaly by environment is auto scaling 
+software as a service example:-netflix we dont know from where they are hosting the data 
+
+
+
+in organization 
+working on application the data is stored in database 
+maintain the database if newer version it is paas worry about platform and data 
+
+
+client say i have requirement i want my data in big data environment 
+that too i want to run the data in multi clusters environment 
+
+Aws >Azure> Gcp OracleCloud ibmWatson
+we cant say which is best 
+which cloud company is has high market share 
+user friendlyness is azure 
+
+with robust and fast aws is best which 200+ services 
+
+how to work with aws console 
+
+account security credentials 
+gorrek_Genesis
+Aasr
+
+
+login as a root user use multi factor authentication 
+
+1061 2973 2153 account id
+
+we deploy our resources in region 
+mumbai hyderabad(2022)
+
+services>database>rds(traditional)
+		>dynamo db 
+services > traditional>Ec2
+
+if we click on aws logo it goes to recently visisted home page 
+
+left of account there is region 
+
+check which area servers were there in which area 
+where customer is there 
+
+availability zone is an environment that is identified within a aregion and in which region 
+which is not present in same fault line 
+
+
+availability zones are not same fault zones if u deploy one application will be made in available zones 
+so can use 24/7 
+segregated as fault lines and highly available 
+
+Mumbai 
+avail zones 3
+local zone s 2
+
+
+local zone is extension of region 
+delhi 
+kolkata 
+
+*region
+*availability zone 
+*local zone
+*fault zone  
+
+region 
+Local Zones are designed to bring the core services needed for the latency sensitive portions
+of your workload closer to end-users, while Availability Zones provide access to the full array 
+of AWS services.
+
+
+These locations are categorized by regions and Availability Zones.
+AWS Regions are large and widely dispersed into separate geographic locations. 
+Availability Zones are distinct locations within an AWS Region.
+that are engineered to be isolated from failures in other Availability Zones.
+
+
+change location 
+s3 most common used 
+simple storage services 
+buckets are containers for data stored in s3.
+
+ap-south-1 which is region identifier 
+
+where does the security come from 
+iam -identity access management 
+acl -access control list 
+
+go to s3 
+give name and select region 
+object owner ship 
+and acl enabled 
+and public should acces or not 
+
+
+
+click on create bucket 
+
+go to object 
+
+and later select properties  arn amazon resource name  and check resourse is in in which region 
+later management 
+
+using this resource name i can access bucket 
+ui is going to come from this arn 
+copy arn and go to web browser and access to 
+
+https://bucketname.s3.ap-south-1.amazonaws.com
+in objects upoad image 
+
+click on name of that image 
+then uri will be there 
+uniform resource identifier 
+object url is link 
+
+click on permissions change permisiions 
+acl enabled save changes 
+go to buckets permissions go to access 
+public access list and read 
+on that specific object like image permissions and bucket also i need to giv eprivilages 
+
+if we remove permissions then user cant access 
+
+
+
+
+
+
+wherever u r sitting the request will be made available in aws region 
+unless or until made available in multiple region 
+
+if u want u can make ur resource available in multiple region 
+u need consider 
+
+
+
+https://aws.amazon.com/developer/tools/
+
+
+programming languages can be used 
+
+click on command line tools and then download  aws command line 
+download 64 bit aws command line interface 
+
+but we installed but we need to configure to acccess my cloud 
+
+
+that comes from security credentials 
+
+we require access key 
+create access key u can activate or deactivate accordingly 
+without access u cant use cli 
+and configure region where iam accessing the 
+what configuration is already done 
+
+***configure cli 
+aws configure list //command to get list 
+
+now start configuring 
+aws configure set region ap-south-1 //
+now in windows explorer u can new file config is create which has region in it 
+aws 
+use secret key 
+bring credentials file into .aws folder 
+
+now when u use aws configure list 
+
+or it will ask each if we use this command 
+aws configure 
+it will ask each and everyone 
+access id 
+secret key
+default region ap-south-1
+default output format json 
+
+
+to set profile
+set AWS_DEFAULT_PROFILE=default 
+ 
+
+listing files in s3 
+aws s3 ls 
+
+we can create objects from cli 
+very simple make sure that we point to correct region and 
+we point to correct authenticattion mechanism 
+
+
+now start creating a bucket 
+aws s3api create-bucket --bucket demobucket-gorre-cli//error region specific 
+
+aws s3api create-bucket --bucket demobucket-gorre-cli --region ap-south-1
+//cant access s3 api error 
+
+make bucket 
+specify region 
+aws s3 mb s3://demobucket-gorre-cli --region ap-south-1
+
+aws s3 ls 
+now new bucket is created 
+
+
+we can also use  remove that using 
+no need to give location 
+if data is present use --recursive 
+rm->remove objects 
+rb->remove bucket itself
+aws s3 rm s3://demobucket-gorre-cli --recursive
+
+
+go to object happyface.jpg actions copy object and place that in bucket 
+
+aws s3 rb s3://demobucket-gorre-cli
+
+another service 
+vpc --virtual private cloud 
+vpc is a logical priavte network we use this who can access this and who cant acceess this 
+pickup information of vpcs 
+aws ec2 describe-vpcs
+
+comfortable with management console and command line environment 
+sop cant give access to management most of times 
+
+
+to get all commands 
+[12:29 PM] Pradheep John (Presenter) (Guest)
+08/28
+https://docs.aws.amazon.com/
+
+aws --version
+always check the documentation for commands 
+
+
+
+if we close command prompt the profile is not setting up 
+
+to resolve this environment variables comes to the picture 
+
+setx AWS_DEFAULT_PROFILE=default 
+
+close and open its set ....machine level its updated ...
+***
+setx is command to set permanently 
+
+now check aws configure list 
+
+	
+it wll permanent till u change it 
+
+
+use correct options in command 
+
+aws s3 ls //list down particular commands 
+
+aws s3 rm s3://demobucket-gorre --recursive //empty all objects in that particular bucket 
+
+aws s3 rb s3://demobucket-gorre //remove my entire bucket
+
+
+in our case they created users but they have not given permissions 
+
+
+
+iam>users>gorre>create access key cli then next 
+then download csv file 
+
+
+if u want to access this user in cli then in credentials file 
+
+write 
+----------
+[gorre]
+aws_access_key_id = ********
+aws_secret_access_key = *******
+-----------
+replace * with values from csv 
+
+now in cli
+aws configure set profile gorre
+aws configure list 
+but default profile is set 
+
+another way  is 
+
+set AWS_PROFILE=gorre
+aws configure list now its changed 
+
+
+
+also in config file set location 
+write 
+-------
+
+
+-------
+
+
+set AWS_PROFILE=gorre 
+
+
+works fine 
+
+
+aws configure set region ap-south-1
+aws cofigure list 
+//
+[profile gorre]
+region=ap-south-1
+output = json
+
+set AWS_PROFILE= gorre
+aws  configure list 
+
+entire info will displayed 
+
+next aspect BASICS 
+
+
+--------
+how to create our own virtual private cloud 
+
+
+logical entity //virtual
+u specify what can be access 
+vpc --logically isolated virtual network 
+with in the vpc a range of ip adresssess are called subnet which are not overlapping 
+
+
+in region multiple available zone 
+vpc can scan over multiple availability zones as part of that particular vpc 
+*****(**)***
+each subnet must reside with only one availability zone 
+
+
+i have one 1 vpc i have 3 availabilty zones with 6 subnet 
+categorize as private or public
+no connectivity from internet environment 
+public subnet means yes u can connect from internet and all 
+
+-------
+internet gate way is entry point to the network(Vpc)
+any request need to pass through as a door man
+
+
+https://cidr.xyz
+classless inter domain rooting 
+cidr stands for range of  ip adressses
+
+2 types of ip adressess
+ipv4 -32 bit enity
+`	10 . 88 .135 .144 /28
+10.0.0.0
+each part is octet 32/4 
+can specify how many range of network u can have and how many host we can have 
+
+we also different classes of ip adress that are there 
+class a - 0 -127 
+class  b -128-191
+class c -192-223
+class d -224-239
+class e - 240-255
+certain address are reserved adresses for example all zeroes is reserved 
+adresss like 0.0.0.0/0   -->open ip
+
+127.0.0.8/0 ->loop back adresss most common used ip adresss 
+0.0.0.8/0 ->any host within network 
+
+
+------normal 
+10.0.0.40/? ->16 
+we call ? it has mask  2^16 =65536 adreesss
+the first two octet is used to identify network 
+the 3 and 4 octect specify the physical machine 
+
+
+10.0.0.40/24
+count -256- zeroes = 255 
+
+172.31.0.0/16
+this means that 16 bits will be used identify network 
+with in 16 i can use 65,536 ip adresss of machine 
+subnet is part of ip adresss 
+always subnet will be higher than u specified 
+the ranges should not overlapping 
+verfy careful when specify ip adresss cidr ranges 
+
+work with internet gate way which is specified what will be allowed or what not 
+
+different route table will be creeated here 2 were created 
+1 for public and 1 for private 
+
+next level of abstraction comes to picture 
+
+route table we specify set of rules which is called as roots 
+which determines where traffic is going it.
+
+private will communicate with local gate way 
+public will communicate with internet gate way 
+
+if i dont specify no body cant access anything 
+--------------------
+ipv6 -128 bit enity 
+
+
+
+
+
+
+Day 2
+
+
+security aspect setting up of vpc 
+
+login into your environment 
+root user //perform anything super administrator 
+iam user //user created with organization in aws given restrictive privilages 
+//what is aws organization is an account management service 
+
+it also consolidates billing of  my willing capabilties specify my security business complaint 
+
+work with organization 
+iam>security credentails >assign mfa device 
+can create multiple account in organization 
+
+more like a container 
+
+
+in ur organization if u want to have different business units where they are going to work 
+can have multiple account 
+
+kpit organization can have multi account 
+
+search iam 
+physical user or business workload 
+********
+identity 
+users //create multiple users and each user can have lot of aspects 
+	iam>users>create user 
+	testuser
+	provide user access to aws managament console //if not given cli 
+	specify user in identity user or iam //create a new user 
+	auto password 
+	custom password
+	users must sign in password 
+in attach policies add read only access //aws managed job function  
+roles 
+groups 
+
+
+
+
+using the group i can specify permission for multiple users 
+
+roles ///
+role has certain permissions in the role we add permissions to it 
+we can associate the role with the user 
+
+how to grant a role 
+
+u have assign permissions to that role 
+
+when we try to create 
+
+
+
+2scribe 
+
+these two policies  are called identity based policies 
+
+managed policies 
+	under manage policies we have 2 
+		aws managed policies 
+		customer 
+inline policies //directly to user group 
+
+
+[11:15 AM] Pradheep John (Presenter) (Guest)
+
+a.Identity-based policies
+
+1. Managed Policies
+
+    a. AWS managed policies
+
+    b. Customer managed policies
+
+2. Inline Policies
+
+service control policies 
+
+acl 
+
+
+all resources were available in north virginia 
+
+resource based policy 
+this is called create bucket and permisions edit add statement s3 list all 
+
+
+aws organizations 
+service control  policies have to explicitly add policies 
+any time user access 
+
+this is policy 
+
+permissions 
+
+
+iam> users >permission boundary > u can control what is maximum permission for this particular user 
+either u can create singleor own custom policy and set boundaries 
+
+
+
+
+session policy //only through cli 
+
+dediacted means run on dedicated instances or single dedication 
+go with default 
+
+i can specify how many availability zones i can work with 
+no. of public subnets - 0 everything is private 
+
+if 1 then internet gate way is enables
+
+nat 
+network adress transalator 
+nat inside ur family different name and outside differenet name 
+outside public and inside private 
+
+s3 
+
+
+
+//day 3 
+open command line 
+
+compute>ec2>instances > launch isntance >  select 2 free tier amazon 2 hvm 
+>instancee type 
+
+what is this nomenclature 
+first character denotes the instance family 
+t - bustable performance 
+high performance 
+c stands 
+d dent storage 
+f fpga 
+g graphic intensive 
+i storage 
+m general 
+inf aws inferentia 
+
+p gpu r memeory optimize 
+u high memory 
+vt video transcoding 
+x memory intensive 
+
+m5dn.24xlarge
+next digit is genertion of family 
+next is processor 
+n - network 
+after . means size means 24 times large 
+
+
+ iops -- input output provisioned right storage 
+cold -- data cant be frequently acccessed 
+
+trying to create a role associate with ec2 instance on ecv2 instances we can have full permissions are granted
+
+
+connect to instance 
+ec2 isntance connect is very simple and secure connect linux secure shell.
+
+
+can connect with session manager service 
+
+aws based shell or aws cli 
+
+ssh client 
+
+ec2 serial console 
+//aws session manager 
+sudo yum install ec2-instance-connect 
+
+ssh
+
+
+
+
+load balancing 
+
+how to distribute the traffic so that 
+
+**automatically distributes traffic across multiple targets 
+**provides high availability 
+**incorporates security features 
+**performs health checks 
+
+
+
+
+
+
+aws system manager 
+if i want to use java 
+know packages available 
+install it as a super user 
+
+login as a root 
+sudo su -
+go to openjdk.org/install
+
+fedora oracle linux redhat 
+sudo amazon-linux-extras install java-openjdk11
+
+ami -amazon machine image 
+public ipv4 dns copied 
+
+ec2-34-201-147-180.compute-1.amazonaws.com
+*****************************
+31/8/23
+
+gorrek_Genesis@Kaat
+aws configure list //in putty cmd
+aws configure  --profile gorrek_Genesis
+ls -a
+cd .aws
+less config
+q to exit 
+export AWS_PROFILE = gorrek_Genesis
+aws configure list 
+aws s3 ls 
+//make a bucket 
+aws s3 mb s3://demobucket-gorrek
+//remove bucket 
+aws s3 rb s3://demobucket-gorrek
+
+
+public ipv4 gyan 
+ec2-54-211-110-143.compute-1.amazonaws.com
+
+ in s3 bucket training28-s3
+bucket version enable if we upload same file we will have multiple version of it
+
+
+
+on bucket level block public access in permissions 
+enable acl enabled 
+and go to acl edit authenticated user tick 
+
+
+
+
+*************************
+storage class 
+standard //frequently accesses push the data in milli seconds same data available in multiple available zones 
+standard ia //standard infrequently accessed data once a month with milli second access
+one zone ia //infrequent access data work on single available zones 
+glacier instant retrieval // means about archive data which is stored in glacier storage even though its archive
+still we can retrieve the data in milli seconds 
+glacier flexible retrieval //that time that is taken by retrieval is different 
+		1st mode ->expedited retrieval  //in 1-5minutes 
+		2nd ->standard retrieval  //in 3-5 hours 
+		3rd ->bulk retrieval // 5 to 12 hours 
+
+//S3 Glacier Flexible Retrieval
+1. Expedited - 1 to 5 minutes
+2. Standard - 3 to 5 hours
+3. Bulk - 5 to 12 hours
+
+glacier deep archive greater it will within 12 hours or more 
+reduced redundancy non critical frequently acccess data 
+
+________*******__________________
+intelligent tiering gives the flexiblity to 
+automate the storage to move from one storage class to other to optimize the cost 
+
+****
+iam >usergroups >aws genesis group >add permissions >policy first one click>add amazon s3 full access click on add permissions 
+enable acl in bucket permissions 
+block all public access turn off 
+now in image permissions add authenticated user tick on read and write save 
+
+
+[ec2-user@ip-172-31-26-176 .aws]$ ls
+config  credentials
+[ec2-user@ip-172-31-26-176 .aws]$ cd
+[ec2-user@ip-172-31-26-176 ~]$ ls
+[ec2-user@ip-172-3
+[ec2-user@ip-172-31-26-176 ~]$ pwd
+/home/ec2-user
+
+
+in 
+command prompt shubamk
+ssh ec2-user@ec2-54-211-110-143.compute-1.amazonaws.com -L 2222:54.211.110.143:22
+yes enter 
+
+
+
+cors //cross origin resource sharing 
+//access from different domain
+allow methods 
+other domain can get access through methods get put 
+
+bucket management >
+other one is life cycle rule i can specify when to move the current version 
+
+replication 
+enable bucket versioning  
+rule as rep_rule1 
+apply to all 
+specify which bucket like training28-
+
+
+empty the bucket it cant be chargable
+********************* 
+data base management system one is traditional one is no sql 
+now  traditional 
+
+search rds 
+relational database service 
+
+rds >create database 
+easy way is to select easy create 
+in easy create if u scroll u can see we can work with 6types of data base 
+
+easy create >select mysql >mysql community > free tier 
+dpins
+check screen shot 
+set a password 
+crete db 
+
+
+
+instances start instance connect 
+aws rds describe-db-instances --filters "Name=engine,Values=mysql" --query "*[].[DBInstanceIdentifier,Endpoint,Address,Endpoint.Port,MasterUsername]"
+
+check what are the rds instances available 
+install mysql 
+sudo yum install mysql 
+connect using url 
+mysql -h <public ipv4> -p 3306 -u admin -p 
+
+
+
+
+ask for password enter 
+
+
+this way we can install any db and work on it 
+
+
+mysql -h dbinstrpj.cbuvg3nmfkb5.ap-south-1.rds.amazonaws.com -P 3306 -u admin -p
+
+
+cloud watch > live tail >
+
+i already have mysql and post gresql 
+y aurora 
+amazon aurora also includes high performance storage subsystem 
+it works in clustered environment or distributed environment 
+cluster volume go to about 2^40 bytes //tebibyte
+automates clusters and replication part automaticallly 
+but for other we need to explicitlly configure 
+
+the more storage |^ more pricing 
+
+check no.of nodes that u are going to workw with 
+
+
+go to dashboard pricing 
+
+what is aurora db cluster 
+go to db instances classes 
+replication 'billinfg part 
+
+
+what is amazon rds 
+
+
+
+
+iso and oso layers 7 
+physical layer //transmission of raw data 
+data link layer //convert raw to predefined or what format 
+network layer //what is root that dat a
+transmission //protocal 
+session //connectivity 
+presentattion layer //application format 
+appl//ui 
+
+
+layer 7 //application load balancer //http and https 
+layer4 transport layer //network load balancer //tcp and udp 
+layer3 //gate way load balancer //ip 
+
+based on demand we can scale up and scale down 
+how it works 
+
+first thing that we create is a traget group 
+is nothing but collection of target s which are put together 
+u can register multiple target sin that target group 
+
+listener used to forward to the target group 
+redirect the traffic to appropriate target group 
+ 
+
+ece>load balancer>create application or any 
+
+include in pending group and create 
+it wll create a traget in target group 
+
+day4 31/8/23
+
+standard mainly bills on readn and write speed 
+standard ia bills on storage part more 
+
+dynamo db >tables 
+//picking up data but not very recent right operation 
+*****eventually consistent //reads the dynamo db table and result that u get will not reflect recently complete right operation
+recent will not be picked up 
+*****strongly consistent //takes up to last second write operation 
+transactional consistency // data that has to be written in transaction
+till recent transaction whatever written will be picked up 
+consistency of data which transaction recently completed 
+
+dynamo db how we utilize parameters read consistency and write consistency costing will be increase 
+
+
+on demand capacity //simplify billing by paying for actual read and write 
+provisioned //manage costs by allocating read/write in advance as dedicated is created 
+
+
+if we change from provisioned capacity to on demand capacity dynamodb it will very less 
+
+when u create local secondary index? yolo
+
+at the timeof creation of table we know for sure we are having queries in that part 
+we are going to create a local secondary index where clause is hitting then we create 
+index //quick retrieval of data (faster searching )
+
+we can have multiple local secondary index ///
+______but we cant create local indexes after u created the table 
+//go and write any number of global secondary index allow u to perform query on attributes 
+which is not part of tables primary key 
+when  creating global secondary index 
+need to specify partition key(distribution of data like repitive value ) and sort key 
+for example manager for multiple employee 
+***********
+u have local secondary index y because when we create a table we have specified 
+partioning key and sort key which is primary key automatically there would be index which would be created 
+now when u create any index is secondary index 
+two types of secondary index 
+	local secondary index --can be created only when u are creating the table 
+		need to specify another column based on which data index has to be created (sort kkey index name )
+in our environment application might run queries which are not of primary key so we create  local secondary index on those columns 
+
+				usage--:>
+	global index --
+
+when u create a dynamo db table we need to specify what is the local secondary index 
+
+u can turn on deletion protection
+
+//if requirement comes to change local secondary index then we have to unload that table externally 
+and push the data to new table with new local s i .
+
+
+how to create a item ? yolo
+dynamoDb>tables>employee>
+actions>create item >
+dept id A001
+emp id E001
+add new attribute string EmpName pardeep
+add new attribute number Salary 10000
+add new attribute string ManagerId E001
+
+create item 
+
+after create actions>download to csv 
+
+or select the item and actions duplicate the item 
+and i can specify values by  just change it 
+
+
+
+create a table //task yolo 
+
+search dynamodb >click on create table 
+Employee-t28 //table name 
+DeptID //partiotion key 
+EmpID //sort key 
+
+table setting customize select dynamo db standard ia 
+on demand 
+create local index 
+EmpName //create index 
+Salary //number create 
+create global 
+ManagerID //create index 
+
+scroll and 
+create table 
+
+after active click on it go to indexes u can see 
+
+
+in overview explore table items 
+click on create item >>same dept id every one is going to use same 
+A001
+EmpID E018
+next add atrribute string 
+EmpName Bhanu Pradeep Kumar
+next add atrribute number
+Salary 25000
+next add atrribute string 
+ManagerId E018 
+
+click on create item 
+
+click on scan 
+Table-Employee-t28
+specific attributes
+add EmpId EmpName DeptID attributes 
+
+
+filters 
+attribute name salary type number 
+condition equal to value greater than or equal to  100000
+
+now let us do query using table-Employee-t28
+all attributes 
+A001
+Equal to E018
+
+now let us do query using index 
+select index-EmpName -index 
+now we have sort key changed as this is local  EmpName 
+again go to drop down index and select salary 
+the sorting key changed to Salary*****
+but partition key is same 
+
+now when u select global index there is only partition key no sort 
+as we specify only that 
+
+in ManagerId type E018 and u can see 
+
+
+after in indexes delete global secondary index and create new 
+ManagerId
+Salary
+we can do it 
+can be droppped and new can be created after u create a table 
+whereas in local can be dropped and created after creating a table 
+
+third one in tables 
+monitor 
+in monitor wherever u have done read and write there is spike 
+
+get put and scan latency 
+this is where we query 
+
+scroll and see 
+scan returned item count and query retrun item count 
+system error read/write and user errors 
+
+transaction conflict error 
+cloud watch is watching all the tasks which are performing 
+
+*****--------backups -------------------------
+go to backups and explore 
+
+point in time recovery provides me continuous backup for 35 days so that i can avoid
+accidental deletion
+
+and down we can create our own backup 
+in backup and drop down create back up select that one 
+//? yolo
+	we can create 2 types of backup 
+on demand backup ***
+schedule backups that asks u with different service awsBackup>Backup>create Backup plan 
+start with atemplate  like 35day dailymonth weekly 7yr 5yr retention 
+or build a new plan in config backup vault we can Seewhat are available 
+what is frequency daily custom cron expression we can write our own in utc manner 
+crn(0 1 ? * * *)
+enable means pitr available 
+
+what should be backup window 
+like start within many hours or days(max7) like that 
+once started within what limit it should update what time duration 2hours to 30 days 	
+
+backup frequency --when backup has to happen periodically
+backup window - what next to time if scheduled time comes in if backup does nt start how long 
+does u wait if starts which time 
+copy to destination -> to which destination it has to copy to can specify the copy to destination 
+*****transition to cold storage ->>if u have older backup images then do u want that backup images to cold storage 
+retention period ->tells u that how long that particular backup need to retain in the environment 
+
+------------------------------------------------
+---------------export and streams --------------------------------
+	exports to s3 
+do u want to export to s3 
+when we click and see we need prerequiste and it will show error 
+as turn on point in time recovery (PITR)
+after i turn on i can specify which is my destination bucket 	where i want to export the data 
+bucket can be in same account or different aws account 
+	---data streaming---
+however wants the data 
+u r streaming the data in real time whoever wants the data or downstream environment can pickup that 
+particular data 
+
+whatever happens in our environment insert update delete u r going to streaj it 
+in real time to the downstream application 
+
+either u can connect with amazon kinesis(avail in aws kinesis data stream) or dynamodb stream details(dynamodb stream)
+u can capture changes and u can only access only through  for dynamo db stream api.
+whereas in amazon kinesis once changes are captured passed as a data stream 
+so any application which can read kinesis 	can work with that 
+u can read and store till other application require that data 
+store consume monitor as it is separate service take care of all 
+       ___________________________
+		-----global tables---
+
+i have table in nvirgina my customer is in ohio how to give accces to that 
+particular region beacuse if people try to acccess from that region there will 
+be conflcits and latency how to resolve this is where global tables comes 
+
+create replica -page> available replication regions select us east ohio 
+a replica table will be create in that particular region and a copy of this 
+particular table will be there and whatever changes happening will be synced with each other 
+----->that is replica//both are in sync with in each other..clone or copy 
+u can make changes anywhere and same changes will be synced in.
+ 		---------------------
+		---additional settings---
+we can specify or modify capacity mode or on-demand mode 
+we can specify auto scaling activities 
+when there is a demand we can say auto scaling happens 
+what is happening dynamodb table and secondary indexes that is monitered by cloud watch 
+based on that automatically scale up or down depending on work load 
+
+-->time to live how long should a item be made available  
+like if u specify time stamp after that particular time stamp dynamo db automatically deletes the 
+item from the table it happens in background 
+ex:- if u dont want files which are older u can specigy time to leave 
+
+encryption 
+ enahnced security by encrypting all data at rest using encryption keys stored in aws 
+key management service 
+
+deletion protection protects the data being delete unintentionally 
+ 
+sir missed tagggggggggggggggggggggggggggggggggggggggs topicccccccccccccccccccc
+
+
+
+	---------------------------------------------------
+
+
+------------------------------------------------
+click on run boom 
+
+will display fliters data and gives to you 
+
+depid emp id emp name 
+will give results 
+
+reset and now check with query
+
+select all attibutes 
+deptid partition  key 
+sort key empid equal to E018 
+
+scroll and run 
+
+
+this is how u can work with dynamo db where u can work and 
+query and u can scan 
+
+
+
+
+
+
+-----------how to setup the development environment from that development environment how to go and work with dynamo db  ------------------------------------------------
+
+right sdk made available in our environment
+
+u should have access to ide or development environment 
+in that we have to connect what we have to do is setup 
+
+confing and credentials part is done 
+u require a environment a java environment 
+setup an environment 
+
+one is for coding for development  and one is for building distributables capability (work with maven or gradle )
+eclipse or note pad  
+
+cdac
+
+02/09/23
+
+------------------simple queuing services sqs -----------
+message queuing services 
+one of most asynchronous to communicate between applications 
+amazon sqs reliable high performance systems 
+messaging system of their own they tend to send and receive data as messages 
+
+ansynchronous producer and consumer need not be active 
+sqs queue->sqs store messsages and wait for consumers to poll 
+
+pooling -->store data the queue 
+long poling ->the received msg request query sent to all servers for messages 
+short poling ->the received msg request query sent to subset of servers based on weightage messages 
+even if theres is no msg it will respnd 
+for long poling atleast 1 msg should be there 
+wait time -> which will tell me long will wait if wait time is over then say there is no msg 
+
+based on data scenarios 
+uploading an image into s3 bucket whenerver image is uploaded to s3 bucket
+i want to create a thumbnail in another particular bucket 
+we cant create thumbnail without image 
+when image uploaded send a message as queue so consumer can access it 
+
+		two types of queues 
+		1.standard ///default queing type 
+		2.fifo first in first out 
+standard->.unlimited no of api calls per second unlimited actions simultaneously .
+supports atleast once message delivery 
+
+standard queue provide best effort ordering means in same order the msg is present it will follow the order 
+
+
+ex:-
+withdraw put card pin process 
+while processing in mobile amount has been withdrawn but paisa is not coming from atm 
+you pickedup the card and still no money 
+reverted back 
+
+order is very important 
+
+fifo available only once 
+turn on messages disappear after 24 hrs it will disappear even if u wanted back it will not be available 
+
+u an specify which best effort ordering 
+
+
+most of services are standard 
+
+
+
+amazonsqs ->queues>create queue 
+slect standard 
+T28-Queue
+factors that determine the queue behaviour first is 
+visibility time out :-is length of time that a message received from a queue will not be visible to other message 
+consumer
+lets say i have 5 costumers accessing the same thing 
+now it specifies if that what should be timelimit till that msg is remain inqueue but not visible to other customer 
+
+message retention ->amount of time msg stays in queue before it is automatically done 
+what is this -->delivery delay--> amount of time which is delayed before deliver particular queue
+
+maximum message size by default 256kb 	
+but when work with s3 more size required we have extended client library to store data upto 2gb 
+
+
+receive message wait time ->max amount of time sqs wait for msg ?????
+
+who can access and and who cant basic or advance mthodology 
+
+********
+redrive allow policy ->which all are queues can be allowed as dead letter queue 
+-->this msg is not able to delivered they have store separately called dead letter queue and check 
+whats issue debug and send msg accordingly 
+dead-letter-queue enable or disable 
+
+
+
+for fifo two things will be extra 
+1.enable content-based deduplication ids based on body of message
+u require unique id 
+	same msg will be delivered multiple times that cant be happen 
+	reduplicate the data based on content body not available for standard only for fifo
+	
+we can select dedepluication scope is on queue level or message group level 
+
+
+2.high throughput fifo queue 
+process huge of calls 
+we can set limit queue or id 
+
+task create queue and fifo queues 
+T28-Queue
+T28-Queue.fifo //end with .fifo 
+
+select and send receive message 
+enter message and send
+
+my polling duration is 30 sec so iam going to wait 
+
+poll for messages and i can receive msg that i sent 
+
+poll again for messages in receive count we can see number increases as we can access it 
+now delete msg and poll for msg again 
+
+
+noe create message body 
+
+new message for delay test 
+delivery delay 45 swconds 
+attributes title testing sqs string 
+polling 30 
+now start polling we cant see 
+as msg is not yet put in queue 
+
+we can see data with cloud watch 
+
+
+dead letter queue 
+
+
+fifo in certain cases cant  be treated as source or target 
+
+----------------------------------------------
+------------------simple notification service(sns)--------------------------
+sns->publisher and subscriber 
+publisher publishes the mesagge into topic 
+any body who wants that information has to subscribe themselves .
+any msg put in topic will tell new info is there 
+
+message delivery system that delivers msg to publisher or subscriber it they subscribed they will 
+receive notification 
+
+u have to have subscription unless subscribe u cant do anything 
+
+topics and try to -->create a  topic  u can see that there 2 different types of topics that i can create 
+1 is fifo(prereserved message ordering | subscription protocols sqs |high tjoughput upto 300 publishes /second ) 
+and another is standard (best effort mesage ordering |)
+
+access polocy advanced json or normal 
+
+
+turn on content based deduplication
+
+encrption need to enable 
+
+delivery status logging -optional 
+create a new role check all and allow 
+gives permission to cloudwatch environment we can see automatically 
+
+
+active tracing price |high
+
+go to iam >roles copy arn for success and fail 
+
+
+after doing 
+i have to create a subscription
+pointing only to standard queue and fifo for thier respective 	
+
+sqs no mesaage available and no messages flight 
+
+Assignment 1 (02-09-2023)
+1. Create the following types of queues:
+    a. Standard (T28-<yourinitial>)
+    b. FIFO (T28-<yourinitial>.fifo)
+2. Send msgs and check whether they are received in the queue.
+3. Create the following types of topics:
+    a. Standard (T28-<yourinitial>)
+    b. FIFO (T28-<yourinitial>.fifo)
+4. Subscribe the queues to corresponding topics.
+5. Publish msgs in topics and check whether they are received in the queues.
+
+
+custom payload we can send different messages to different protocols 
+email sqs lambda
+
+
+enable sqs 
+what are the service roles 
+________________________aws lambda____________________________________________________ 
+lambda serverless environment
+---questions-----??? yolo
+with respect to storage elastic block storage gp1 gp2 and gp3 input provisioning environment iops cold hdd magnetic 
+
+these services will be integrated with each other 
+
+processor types of processors we were defining all the infrastructure 
+----------------------
+highly available 
+fully  managed by aws 
+
+computing with virtual servers 
+servers code 
+serverless computing code 
+
+i wnat to only work with coding where i worry about building applications no need to worry of any thing 
+if u want an instance in multiple available zones upload that image in multiple available zones 
+
+restrictions 
+runs for up to 15 minutes 
+supports up to 10 gb memory 
+		invoke
+awsevent source--------> lambda-> aws services 
+		   |
+		function code 
+depends on programming language we have select appropriate runtime for that like for java java runtime 
+
+
+we go and write a code with handler function 
+
+run code without thinking about servers 
+
+
+upload thumbnail in another folder 
+
+
+
+roles create role after adding policies sent by sir 
+
+slect aws service select lambda next LambdaS3Policy next give role name as LambdaS3Role
+
+click on create 
+
+now do process as scribe and resized will be available 
+
+wow amazing 
+is a function which as code picks image as and resize accordingly in resized one 
+
+09-5 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+09/04/23
+api gate way container registry 
+application program interface 
+
+from where do we interact from either user interfaces or write on program u can use api calls to interact with aws services 
+prerequesites and using that we can go and work with api calls 
+
+
+rest apis http apis where api can connect to 
+
+as a  developer create your apllication and when u try to cummunicate to aws then every request go thrugh amazon api gate way which is single point entry 
+based on information or operation it will send requests to multiple services
+create develop maintain monitor 
+cached in api gate way and metadata send to amazon cloud watch service 
+
+
+benifits or features given by amazon api gate way 
+gives us statefull socket or stateless http
+
+single mechanism iam policiies 
+
+
+cloud trail //track user activity and api usage (changes u do for api )
+aws xa ->picking up performance 
+kenary release->deployement at multiple stages and check 
+how to work with api gate ways 
+
+login to management console api gate way console u should have software development kit to do programming 
+
+if ur programming does not support sdk u should write own code with v1 and v2 check in docs 
+
+
+
+when u talking about cli we have to setup crediteials and config 
+
+powershell6.0//windows or .net 3.0 
+if we want we can install in our system we require secret key and acceess id we install that aws tools in our powwershell environment 
+//to install required awstools in powershell windows  
+Install-Module -Name AWS.Tool.Installer
+
+creating api does not matter apicalls will be matter 
+in free tier 1million callss 
+
+scribe doc 
+https://5tia2x8u8j.execute-api.us-east-1.amazonaws.com/t28-api-func-gorre
+"Hello from Lambda!"
+Create AWS Lambda Function and API Gateway Integration
+
+curl --help
+check docs and do 
+https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html
+
+
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html
+
+
+https://docs.aws.amazon.com/apigateway/latest/developerguide/private-api-tutorial.html
+
+
+
+
+registry pulls container image from registry 
+orchaestation is mechanism by which u create environment from function to ____
+using orchestation tool i can deploy manage scale maintain and monitor of that system
+one is eks elastic kubernetes service (eks ) fully managed service u require some additional configuration 
+when it comes to kubernetes 
+
+ecs(elastic container service) no config is required less effort 
+when u work with other some changes required 
+
+orchestation tool setting up the environment 
+aws fargate serverless hosting services depolying in ec2 instance 
+
+Dynamo db is no SQL data base
+
+In nosql data is stored in key and value pairs
+
+Don't have concept of rows and columns rather we have concept of key value pairs
+
+ 
+
+Can do scaling very quickly we don't have. To maintenance including encryption everything is taken care by Dynamo db all I have to do is go and create table thats it
+
+Configuration replication
+
+ 
+
+ 
+
+Charged for reading writing and storing of data
+
+Want to calculate cost for dynamo db
+
+ 
+
+ 
+
+Partioning key is one part of table primary key
+
+When data comes in distrube the data based on. Values
+
+Each employee I'd has unique
+
+We go with partioning key as repeated value which is dept id
+
+ 
+
+For partion depid
+
+For sorting empid
+
+ 
+
+Private rest API within vpc
+
+Public all
+
+How to invoke or work with api
+
+5 reasons to work with micro services
+
+Software is collection of small services which are independent are each other
+
+Development cycle is faster
+
+Monitoring and maintaince is easily
+
+Independently
+
+Communicate each other with well defined apis
+
+Scalability is quicker when u use micro services
+
+What is registry and repository
+
+Collection of something which will be registered
+
+Registry of something
+
+ 
+
+Ecr elastic container registry
+
+By default private registry is there created automatically
+
+If u want everyone to access push to public registry (pull scan )
+
+Repository docker
+
+has context menu
+what is cluster 
+
+-------------------------------------------------
+a task definition a test based file written in json which has parameters and containers that form application
+what parameters are there in this blue print 
+1.docker image that u want to use for this particular task 
+2.what is cpu memory to use for each  task or each container 
+3. what is launch type that u have to  use
+4.what is networking mode that is required 
+5.logging config of task 
+6.if container fails or succeds ask continue to move on or terminate 
+7.when container is to invoked what is command that used to be run 
+8.is there any storage data volume that is used by (container required additional storage volume )
+9.what is iam rule that is used in task 
+generic parameters that we use 
+apart from this partition also there 
+resource limits //when i provide resource is there any limitations
+health checks //talk about health of your container and associative parameters which get configured 
+
+task is runtime of taskdefinition 
+when u run taskdefinition it is run 
+
+cluster is logical grouping of tasks or services
+along with that we specify what is capacity because scale up and down based on  requirements 
+capacaty is provided by capacity provider 
+
+manage container orchestration service integrated with aws 
+pulls images from your repositories 
+ecs services scale service capacity by managing container count 
+ecs clusters scale hosting capacity 
+--------------------------------------------------------------------------
+what are salient features of amazon ecs 
+
+fully managed 
+service discovery 
+aws integrations 
+works wit common development workflows 
+
+u can register your ecs service with dns 
+when some one require this service they can discover this 
+if  i want to interact with other services i can use discovery 
+all should be availbe in vpc  they registered each other in service 
+
+i can integrate with cloud watch like that 
+
+cicd-continuous integration and continuos development 
+where u automate the deployment of services that required 
+use cicd pipeline if any change it deploys and push to repository as and when require 
+orchestration srvice to use new image 
+
+where to deploy 
+
+
+available in 3 available zones detectsunhealthy instances by patching up 
+it has latest version
+what is kubernetes architecture 
+
+docker acts like middle man which does not give ordchesttration where u can give deployment 
+placeholder of containers 
+
+using the docker i can package of containers cant orches
+standardization is there 
+
+kubernetes does complex things 
+and ecs also complex 
+
+why orchus task things are arranged in particular like musical and coordinate each instrument is to play 
+__________________________________________________________________
+3 kunerbates architecture 
+user interfaces apllications command line dashboard
+when any request from user interface goes to *****control plane
+which has api server scheduler controller-manager etcd
+
+api server is primary focal point of entire cluster 
+where to send this request 
+the scheduler assigns the pods to nodes 
+pod-smallest execution unit and it can work on one or more applications
+can consist of single container  or multiple.logical grouping of containers  
+node-node is where things get exceuted it can be a ec2 instance 
+node is *****physical resources provides resources for exceution
+
+manages the infrastructure that is available to cluster 
+etcd component 
+which stores entire configuration of kubernates clusters 
+distributed environment and checks and manages 
+-----
+webui -> apiserver,scheduler,controllermanager,etcd ---->worker node1-> pod1(container1),pod2(container2) | container runtime engine | kubelet ,kube -proxy
+*user interface
+*control plane 
+	api server
+	scheduler
+	controller-manager
+	etcd
+*data plane 
+
+runtime engine runs the pods with the container that we have 
+*****kublet not only runs the pods also responsible for health check meahcnaism containers pods are wroking or not 
+******kubproxy acts as network proxy as well as load balancer 
+--------______________________________________________ 
+----------------------------------------------------------------------
+aws fargate 
+ecs and eks orchestration tools 
+ec2 and fargate are hosttype 
+fargate dont worry about underlying infrastructure 
+			least effort     most effort
+			<------------------------------------>
+orchestration service   AmazonEcs(not much config)	 AmazonEKS
+choose your hosting type 	AWS Fargate 		 Amazon EC2
+
+can docker have mutiple images ?? yolo
+i can create one image with multiple applications then y more images required 
+
+commands cat Dockerfile
+
+now build my docker image 
+docker build -t hello-world
+
+cat Dockerfile
+sudo service docker status 
+sudo service docker start
+docker build -t hello-world
+now it is going to build my image 
+docker images --filter reference=hello-world 
+//to check if it is build 
+now to how to run 
+docer run -t -i -p 80:80 hello-world
+ctrl+c to stop 
+---------------------------------------------------
+
+now search for ecr service on left  hand side click on private registry and public registry and repositiries watch 
+
+instance ->run->connect >in command prompt 
+
+how to create a docker image how to push 
+
+//	what is tagging 
+tag the image to repository before u are pushing 
+//how to create a repository command ****
+it will be create in private 
+aws ecr create-repository --repository-name hello-repository --region us-east-1
+now i need to push images into repo
+copy that account id on top 
+//tag that hello-world into that repository 
+for pushing we require username and password
+
+docker tag hello-world 106129732153.dkr.ecr.us-east-1.amazonaws.com/hello-repository
+
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 106129732153.dkr.ecr.us-east-1.amazonaws.com
+//login succeded
+now enter correct account id and region name and push command to push inside 
+it uploads in hello-repository 
+docker push 106129732153.dkr.ecr.us-east-1.amazonaws.com/hello-repository
+now pushing into t28-pvt 
+first we need to tag 
+docker tag hello-world 106129732153.dkr.ecr.us-east-1.amazonaws.com/t28-pvt
+docker push 106129732153.dkr.ecr.us-east-1.amazonaws.com/t28-pvt
+
+//delete repository 
+aws ecr delete-repository --repository-name hello-repository --region us-east-1 --force
+
+now in t28-pvt image we tagged is available even after deleting hello-repository 
+
+-----------------------------------------------
+
+when u run this image we can multiple applications and we can run  it 
+
+we finished registry and work on orchestation services 
+on elastic container service 
+on left select clusters click on create cluster 
+give cluster name t28-ecs
+
+what infrastructure u want to work with 
+select amazom ec2 instances
+whther u required auto scaling group we create asg
+
+what is type of operating system  that u want to work with 
+select windows server 2019 core 
+go to ec2 instance type 
+t2.micro free tier eligible
+desired capacity minimum 0 max2
+in instances check whats the key pair in 
+in ssh select training28-kp
+
+vpc 
+subnet are selected default 
+
+in tag 
+value t28-ecs-cluster 
+create 
+in policies create polcise copy this code 
+t28-ecs
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ecs:CreateCluster",
+        "ecs:ListClusters",
+    "ecs:DescribeClusters",
+        "ecs:DeleteCluster",
+    "ecs:DeregisterContainerInstance",
+        "ecs:ListContainerInstances",
+        "ecs:RegisterContainerInstance",
+        "ecs:SubmitContainerStateChange",
+        "ecs:SubmitTaskStateChange",
+    "ecs:DescribeContainerInstances",
+        "ecs:DescribeTasks",
+        "ecs:ListTasks",
+        "ecs:UpdateContainerAgent",
+        "ecs:StartTask",
+        "ecs:StopTask",
+        "ecs:RunTask"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
+no permission in iam user group aws genesis add permissions attach policy 
+amazonecs_fullaccess
+
+
+go to task definitions
+create task de with json 
+{
+    "containerDefinitions": [
+        {
+            "command": [
+                "New-Item -Path C:\\inetpub\\wwwroot\\index.html -Type file -Value '<html> <head> <title>Amazon ECS Sample App</title> <style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECS Sample App</h1> <h2>Congratulations!</h2> <p>Your application is now running on a container in Amazon ECS.</p>'; C:\\ServiceMonitor.exe w3svc"
+            ],
+            "entryPoint": [
+                "powershell",
+                "-Command"
+            ],
+            "essential": true,
+            "cpu": 2048,
+            "memory": 4096,      
+            "image": "mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019",
+            "name": "sample_windows_app_<yourinitial>",
+            "portMappings": [
+                {
+                    "hostPort": 443,
+                    "containerPort": 80,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ],
+    "memory": "4096",
+    "cpu": "2048",
+    "family": "windows-simple-iis-2019-core",
+    "executionRoleArn": "arn:aws:iam::106129732153:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "runtimePlatform": {
+        "operatingSystemFamily": "WINDOWS_SERVER_2019_CORE"
+    },
+    "requiresCompatibilities": [
+        "EC2"
+    ]
+}
+
+add role in iam roles aws servicerole for aws copy this arn in it 
+arn:aws:iam::106129732153:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS																											
+windows-simple-iis-2019-core:23
+
+we have created a task 
+
+
+
+[12:47 PM] Pradheep John R (Guest)
+
+kubectl version --short --client
+
+[12:48 PM] Pradheep John R (Guest)
+
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.4/2023-08-16/bin/linux/amd64/kubectl
+
+
+
+
+chmod +x ./kubectl
+
+
+
+eks  create a cluster create role in iam eks 
+
+
+
+day9 last day ---------------------------
+scribe create instance and terminate scribe check 
+https://scribehow.com/shared/Launching_and_Terminating_an_EC2_Instance_in_AWS__xGhSPKKlTQ69an8HT8uBcg
+this will be assignment 
+
+
+
+----------python install---------------
+install python java 
+sudo yum -y install python-pip
+aws configure list
+
+sudo yum install python3 -y
+
+python3 -m venv my_app/env
+
+source ~/my_app/env/bin/activate [ec2-user ~]$
+pip install pip --upgrade
+pip install boto3
+python
+//sample code 
+import boto3
+
+ 
+
+def myfirstprog_s3():
+    """
+    Use the AWS SDK for Python (Boto3) to create an Amazon Simple Storage Service
+    (Amazon S3) resource and list the buckets in your account.
+    This example uses the default settings specified in your shared credentials
+    and config files.
+    """
+    s3_resource = boto3.resource('s3')
+    print("We are going to list s3 buckets:")
+    for bucket in s3_resource.buckets.all():
+        print(f"\t{bucket.name}")
+
+ 
+
+if __name__ == '__main__':
+    myfirstprog_s3()
+---------------------------------
+------------------Java and maven installation-----------------
+sudo amazon-linux-extras install java-openjdk11
+sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
+
+vi ListBucket.java
+
+insert i 
+
+//sample code 
+
+//snippet-sourcedescription:[ListBuckets.java demonstrates how to get a list of buckets in your AWS account.]
+//snippet-keyword:[Java]
+//snippet-sourcesyntax:[java]
+//snippet-keyword:[Code Sample]
+//snippet-keyword:[Amazon S3]
+//snippet-keyword:[listBuckets]
+//snippet-service:[s3]
+//snippet-sourcetype:[full-example]
+//snippet-sourcedate:[]
+//snippet-sourceauthor:[soo-aws]
+/*
+   Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+ 
+
+   This file is licensed under the Apache License, Version 2.0 (the "License").
+   You may not use this file except in compliance with the License. A copy of
+   the License is located at
+
+ 
+
+    http://aws.amazon.com/apache2.0/
+
+ 
+
+   This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+   CONDITIONS OF ANY KIND, either express or implied. See the License for the
+   specific language governing permissions and limitations under the License.
+*/
+package aws.example.s3;
+
+ 
+
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.Bucket;
+
+ 
+
+import java.util.List;
+
+ 
+
+/**
+* List your Amazon S3 buckets.
+* 
+* This code expects that you have AWS credentials set up per:
+* http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
+*/
+public class ListBuckets {
+    public static void main(String[] args) {
+        final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.DEFAULT_REGION).build();
+        List<Bucket> buckets = s3.listBuckets();
+        System.out.println("Your Amazon S3 buckets are:");
+        for (Bucket b : buckets) {
+            System.out.println("* " + b.getName());
+        }
+    }
+}
+
+esc :wq enter 
+
+run this program 
+javac ListBuckets.java 
+
+
+install 
+sudo yum install java-17-amazon-corretto-devel
+
+sudo yum remove apache-maven
+
+sudo yum install -y apache-maven
+
+mvn archetype:generate   -DarchetypeGroupId=software.amazon.awssdk   -DarchetypeArtifactId=archetype-app-quickstart   -DarchetypeVersion=2.20.43
+
+
+s3
+
+apache-client
+
+false
+
+identity-center
+
+aws.examples.s3
+
+javaproject
+
+click next two enters later 
+and now build success
+
+cd javaproject 
+
+---------------------------------------
+
+type access key and secret id use-east-1
+json 
+
+
+
+
+///read the error and do the things 
+
+permission problem they will check
+
+7102Ys@123 
