@@ -8,3 +8,19 @@ sdc
 
 uml   
 
+1.Autonomous driving 
+
+2.Powertrain 
+
+3.Connected vehicles
+
+4.Middleware
+
+5.Vehicle Diagnostics 
+
+6.Cloud and virtualization 
+
+7.Vehicle engineering and design 
+
+8.Body electronics 
+

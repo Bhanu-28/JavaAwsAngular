@@ -1,0 +1,298 @@
+K.sajitha 
+//company wants angular material design ui library 
+mean stack mern stack .net java 
+------------commands----------------------
+node -v
+npm-v
+npm install -g @angular/core @angular/cli
+//varshith  ->npm i -g npm@9.6.7
+//install cli 
+//mam->
+npm install -g  @angular/cli@15.0
+//check the version 
+ng version 
+
+//to remove 
+npm cache clean --force
+npm cache verify
+//reinstall 
+npm install -g  @angular/cli@15.0
+check version 
+ng version 
+
+after 
+ng new todo
+no for routing 
+style is css
+
+index.html //is always render spa 
+****folder structure
+once u start the application bootstarp file is  
+main.ts ->entry point contains info about bootsrap module 
+//specifies bootstrap module its specifies bootstarp component 
+//these components render in index.html file 
+//create a file 
+ng new test 
+no->routing
+css->
+
+cd test //change directory 
+ng serve 
+//now copy and run url in chrome 
+
+------day1------------
+create a folder 
+in cmd type 
+code . //opens in vs code 
+
+npm init --yes //create a package.json for me
+//check the command in npm 
+npm i --global typescript@5
+npm i typescript@5 
+create the file tsconfig.json
+create src crate index.ts file 
+tsc 
+//will create dist folder and will create index.js
+
+now try 
+node dist/index.js
+
+refer index.ts commented code there 
+
+//we need to tell transcript compiler where is source file  
+
+//typescript compiler changes the .ts file to .js
+//package.json 
+------/day1---------------
+--------------------commands end -----------------------------------
+----------Lecture 1 (09/14/23)-----------------------------------
+u should develop a solution and by the end create a project 
+hands on 
+
+i learnt orm spring boot rest api connect with backend 
+
+Database	<--DAO->|Business rest api |presentation 
+oracle/db/mysql |crud 			   |html,js,css,php,asp,mvc
+		|web api 		   |Browser 
+					   |how to divide the content how to store based on file extension or based on priorities is called pattern 					   
+
+
+Complete front end with angular 
+features how to use that 
+when to use that 
+
+
+v8->google chrome 
+spider monkey 
+
+
+ryan dahl created node js 
+
+he created a javascript server 
+
+vue,react,next,silt,angular 
+Express ->backend node server middle ware pipe line 
+react ->its not framework javascript library it uses virtual dom 
+type node and write console.log("Hello world")
+library->pick whichever function and plugin collection of builtin methods and arrange it build structure according  to u 
+framework->fit into the structure easier and 	
+
+	angular ->single page application 
+loads only a single page document only part required is refreshed 
+part of tree is refreshed 
+https->protocol
+.io->domain
+/tutorial->folder
+
+updates the body content of that single document via JavaScript APIs
+
+Es6 -->ecma international standard
+
+javascript is implementation of java script 	
+
+after ecma6 they started with year like ecma 2023
+what is statically typed and dynamically typed
+-->statically we declare every variables separately like int 
+java is strongly typed language each datatype follow certain rules casting implicitly 
+python,c is weakly typed [int a =4.5] output 4 -->interpreted 
+
+compiler --compile(check all the errors)->interpreted--->binary
+
+problems faced with var  
+var a =10; typeof a->number reassign a = 'hello' typeofa ->string 
+//same for let datatype changes 
+it is dynamically typed as it is checking the data type at run time 
+
+***
+data hoisting //if multiple declaration  there last one is pulled up 
+/Hoisting is JavaScript's default behavior of moving all declarations
+ to the top of the current scope (to the top of the current script or the current function).
+var->
+let ->not allow for data hoisting 
+const->
+
+var and let 
+local varaibles scope is inside not outside
+
+if  u declare a var inside block statement not function 
+then u can access it 
+{var b1 =45 } 
+b1 //45 
+same thing if u do with let it shows error 
+dont use var it will give wrong results use let instead
+
+
+difference between const and let 
+const ar=[1,2,3,4];
+ar=[11,12,13] // error assignment to constant vraiable
+
+ar[0]=111 //works fine
+structure only will be apllied only  once 
+
+const person ={name :'Alice',age:60}
+person.age =60
+
+data stored in stack || heap 
+
+the stack holds the address manipultating same no problem 
+if u create new one it will not point to other 
+
+//javascript object and metjods 
+developer.mozilla.org
+
+built in functions explore 
+
+with angular the language that we use is typescript 
+typescript is superset of javascript 
+type script is strongly typed programming language 
+that builds on JavaScript, giving you better tooling at any scale
+
+//data cohersion at run time 
+js try to 
+Type Coercion refers to the process of 
+automatic or implicit conversion of values from one data type to another
+
+ex:-var h = "1"
+	type of h ->string 
+h +4 //it should not happen but it will do because 
+
+
+transpilation converting one type of code to other 
+
+angular has type script compiler 
+ts-->tsc--->js---javascript--->browser //this process transpilation 
+annotate the data at compile time 
+type annotation // name :string age : int 
+
+create a standalone compiler 
+but in already u already have all of these 
+
+
+in typescript need to specify data type but for js no need 
+check data type errors 
+
+****
+type script provides type union which specify set of types as single type 
+resolved by string | number 
+
+A union type describes a value 
+that can be one of several types. 
+We use the vertical bar (|) to separate each type,
+ so number | string | boolean is the type of a value 
+that can be a number, a string, or a boolean.
+
+
+//type narrowing //type assertion s
+a type is asserted using a keyword follwed by required type 
+
+//no null assertion we can null remove from th etype union 
+//price! : number  -> definite assignment assertion 
+let toDisplay : true;
+!toDisplay 
+negation true means false false means true 
+//type 
+
+in javascript
+modules 
+angular ->declare modules and integrate  
+declare module u need decorator 
+A Decorator is a special kind of declaration 
+that can be attached to a class declaration, method, 
+accessor, property, or parameter. Decorators use the 
+form @expression, where expression must evaluate to a 
+function that will be called at runtime with information
+ about the decorated declaration.
+ngmodules
+modularity ->different into small managble chunks 
+
+divide team declare members finance it 
+imports wherever required 
+exports '''''''''''''''''
+bootstrap module 
+module and integrate 
+meta data in form of decorator 
+*******
+components -->piece of code 
+
+to  create ui elements i need component 
+but component is part of module so in that i specify what are components in it 
+
+when u create it will have root 
+
+cd todo
+package>is a config file which have all dependencies and information about project and scripts that u will be run
+tsconfig>config file for ts compiler varaibles and all
+
+npm start 
+browser application bundle generation complete 
+ts to js happens
+all js files bundled 
+
+in index.html 
+approot is bootstrap 
+in that app.component.html is there 
+
+main.ts contains bootstrao module app module
+in that we specify declarations import 
+
+Decorators are a design pattern that is used to separate 
+modification or decoration of a class without modifying the 
+original source code. In AngularJS, decorators are functions 
+that allow a service, directive or filter to be modified prior
+ to its usage. 
+
+
+ng generate component <component-name>
+ng g c todo/todoDisplay
+
+
+
+Data Binding 
+square bracket [] has
+property of html element
+
+component to view one way binding html 
+
+pass data in on edirection component ->html 
+
+explore javascript methods
+how to access member of a java script 
+classes methods accessing objects 
+explore and understand 
+
+import arrays
+export 
+bootstrap components 
+modules ng modules
+component metadata->selector identify of compinent and providees
+location of ui and class contains business logic 
+
+
+we learnt data binding string interpolation 
+passing from component to html
+
+hello iam bhanu
+
+--------------------End of lecture 1 (09/14/23)-----------------------
+
+
